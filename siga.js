@@ -30,7 +30,7 @@ const pythagore = (long1, lat1, long2, lat2, k) => {
 
 
 
-console.log(pythagore(3.0601882, 36.7753606, 1.3149999, 34.87833, 1852))
+console.log(pythagore(3.036383, 36.758467, -1.354486, 34.899969, 1852))
 
 const sinus = (long1, lat1, long2, lat2, rt = 6378.138) => {
     long1 = long1 * (Math.PI / 180)
@@ -46,7 +46,7 @@ const sinus = (long1, lat1, long2, lat2, rt = 6378.138) => {
 }
 
 
-console.log(sinus(3.0601882, 36.7753606, 1.3149999, 34.87833))
+console.log(sinus(3.036383, 36.758467, -1.354486, 34.899969))
 
 
 const hav = (long1, lat1, long2, lat2, rt = 6378.138) => {
@@ -60,27 +60,4 @@ const hav = (long1, lat1, long2, lat2, rt = 6378.138) => {
     return rt * c + 'km'
 }
 
-console.log(hav(3.0601882, 36.7753606, 1.3149999, 34.87833))
-
-
-
-
-
-class EarthPoint {
-    constructor(lat, long) {
-        this.lat = lat;
-        this.long = long
-    }
-
-    pythagore(point, k) {
-
-        x = (long2 - long1) * Math.cos(((lat1 + lat2) / 2) * (Math.PI / 180))
-        y = lat2 - lat1
-        z = Math.sqrt(x * x + y * y)
-        console.log("direction " + dir(long1, lat1, long2, lat2))
-
-        return k * 60 * z / 1000 + "km"
-    }
-
-
-}
+console.log(hav(3.036383, 36.758467, -1.354486, 34.899969))
