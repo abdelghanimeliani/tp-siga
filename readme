@@ -1,5 +1,12 @@
-salam abd elghani rani dart 
-    - gaa les type taa les calculs de distance 
-    - direction 
-    -conversion man DMS la dd ya3ni f input yaktab kima yhab ya DMS ya dd
-    
+# Tp SIGA
+
+## c'est quoi ?
+ c'est unz application web qui calcule la distance entre deux point dans la terre 
+
+
+## comment ca marche ?
+ elle calcule la distance avec 3 methode , l'utilisateur a juste de saisir les coordonés des deux points et choisir la methode de calcule 
+
+|une capture|
+ |:------------:|
+ ![tp SIGA](Capture.PNG)|
